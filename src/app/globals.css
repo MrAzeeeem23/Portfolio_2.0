@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* @layer base {
+  :root {
+    --font-michroma: "Michroma", sans-serif;
+    --font-italiana: "Italiana", sans-serif;
+    --font-bebas-neue: "Bebas Neue", sans-serif;
+    --font-exo: "Exo 2", sans-serif;
+    --font-afacad: "Afacad", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+  } 
+  .font-michroma {
+    font-family: "Michroma", sans-serif;
+  }
+  .font-italiana {
+    font-family: "Italiana", sans-serif;
+  }
+  .font-bebas-neue {
+    font-family: "Bebas Neue", sans-serif;
+  }
+  .font-exo {
+    font-family: "Exo 2", sans-serif;
+  }
+  .font-afacad {
+    font-family: "Afacad", sans-serif;
+  }    
+  .font-poppins {
+    font-family: "Poppins", sans-serif;
+  }  
+} */
+
+.custom-cursor {
+  cursor: url("../Assets/Cursor.svg") 5 5, auto;
+}
+
+*{
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  
+}
