@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Logo from "../../Assets/Logo.PNG";
+import Logo from "../../Assets/Logo.png";
 
 const navItems = [
   {
