@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Iridescence from "@/components/UI/Iridescence";
+import Iridescence from "@/components/ui/Iridescence";
 import { Github, Linkedin } from "lucide-react";
 import BlurText from "@/components/Typography/BlurText";
+import { FlipWords } from "@/components/ui/flip-words";
 
 const HeroHeading = [
   "Self-Taught Software Developer",
@@ -10,17 +11,6 @@ const HeroHeading = [
 ];
 
 function HeroSection() {
-  const [heading, setHeading] = useState(HeroHeading[0]); 
-
-  useEffect(() => {
-    let index = 1;
-    const interval = setInterval(() => {
-      setHeading(HeroHeading[index]);
-      index = (index + 1) % HeroHeading.length;
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div className="relative h-screen w-full flex justify-center text-white">
@@ -35,15 +25,8 @@ function HeroSection() {
       </div>
 
       {/* Main heading with re-triggered animation */}
-      <div className="absolute left-1 top-44 py-12 px-6">
-        <BlurText
-          key={heading}
-          text={heading}
-          delay={70}
-          animateBy="words"
-          direction="top"
-          className="text-5xl mb-8 font-semibold"
-        />
+      <div className="absolute text-6xl left-1 top-44 py-12 px-6">
+       <FlipWords words={HeroHeading} />
       </div>
 
       <div className="flex absolute bottom-3 left-3 w-64 sm:w-sm md:w-lg pt-8 pb-20 bg-black rounded-tr-3xl px-6 inner-curves">

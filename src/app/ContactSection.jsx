@@ -1,5 +1,5 @@
 import React from "react";
-import Iridescence from "@/components/UI/Iridescence";
+import Iridescence from "@/components/ui/Iridescence";
 
 function ContactSection() {
   return (

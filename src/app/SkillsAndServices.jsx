@@ -7,7 +7,6 @@ import EnterKey from "../Assets/Gifs/EnterKey.gif";
 import Hand from "../Assets/Gifs/Hand.gif";
 import Cube from "../Assets/Gifs/Cube.gif";
 import SkillsMarquee from "@/components/SkillsMarquee/SkillsMarquee";
-import Marquee from "react-fast-marquee";
 
 const segments = [
   {
@@ -32,6 +31,8 @@ const segments = [
   },
 ];
 
+
+
 function SkillsAndServices() {
   const [segmentsIndex, setSegmentsIndex] = useState(null);
 
@@ -42,28 +43,6 @@ function SkillsAndServices() {
                  text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
     >
       <h1 className="text-center py-12 uppercase opacity-60 text-lg sm:text-xl md:text-2xl">Skills</h1>
-      {/* <div className="relative h-[500px] flex flex-col justify-center items-center">
-        <Marquee speed={100} className="absolute rotate-6 h-36">
-          <h1 className="text-6xl font-bold text-white italic">
-            AZEEM KHAN * SOFTWARE DEVELOPER *{" "}
-          </h1>
-          <h1 className="text-6xl font-bold text-white italic">
-            AZEEM KHAN * SOFTWARE DEVELOPER *{" "}
-          </h1>
-        </Marquee>
-        <Marquee
-          speed={100}
-          direction="right"
-          className="absolute transform -rotate-12 h-33"
-        >
-          <h1 className="text-6xl font-bold text-white italic">
-            AZEEM KHAN * SOFTWARE DEVELOPER *{" "}
-          </h1>
-          <h1 className="text-6xl font-bold text-white italic">
-            AZEEM KHAN * SOFTWARE DEVELOPER *{" "}
-          </h1>
-        </Marquee>
-      </div> */}
       {segments.map((seg, index) => (
         <h1
           key={index}
@@ -90,7 +69,6 @@ function SkillsAndServices() {
           {seg.Last}
         </h1>
       ))}
-      <SkillsMarquee />
     </div>
   );
 }

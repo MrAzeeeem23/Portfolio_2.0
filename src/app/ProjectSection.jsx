@@ -66,7 +66,7 @@ function ProjectSection() {
                 className={`py-4 px-2 transition-all duration-200 ${
                   indexDev === index
                     ? "translate-x-0 sm:translate-x-4"
-                    : "hover:translate-x-0   sm:hover:translate-x-4"
+                    : "hover:translate-x-0  sm:hover:translate-x-4"
                 }`}
               >
                 <p className="uppercase opacity-60 text-sm sm:text-base">
@@ -95,7 +95,7 @@ function ProjectSection() {
                 )}
                 {Pro.liveLink && (
                   <a
-                    href={Pro.GitHubLink}
+                    href={Pro.liveLink}
                     target="_blank"
                     className="p-2 mr-2 border border-white rounded-full"
                   >
